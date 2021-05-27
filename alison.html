@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTLM-ALISON</title>
+</head>
+<body>
+    <div>
+        <h1>WHAT IS THE tag</h1>
+        <p>
+            the html tag represents the root of an HTML document.
+            the html tag is the container for all other HTML elements excetp
+            for the !DOCTYPE tag.
+            NOTE:you should always include the lang attribute inside the 
+            html tag ,to declare the language of the web page,this is meant to
+            assist search engines and browsers.
+        </p>
+        <div>
+            <form action="/action-page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <label for="fathername">fathername:</label>
+                <input type="text" id="fathername" name="fathername" value=""><br><br>
+                <label for="idcard">ID Card:</label>
+                <input type="number" id="idcard" name="idcard" value="idcard"><br><br>
+                <label for="job">Job:</label>
+                <input type="text" id="job" name="job" value="job"><br><br>
+                <label for="submit">Sent:</label>
+                <input type="submit" id="submet" name="submet" value="submet">
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h1>The form name attribute</h1>
+
+<form name="myForm" action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="button" onclick="formSubmit()" value="Send form data!">
+</form>
+
+<p>Notice that the JavaScript in the head section uses the name of the form to specify which form to submit.</p>
+function formSubmit() {
+    document.forms["myForm"].submit();
+}
+</script>
+    </div>
+
+
+    <div>
+        <p>
+            asterisk (*) <br>
+            left parenthesis (<br>
+            quatation mark "<br>
+            percent sign %<br>
+            exclamation mark !<br> 
+            comma ,<br>
+            full stop .<br> 
+            solidus /<br>
+            digit zero 0<br>
+            digit one 1<br>
+            digit two 2<br>
+            colon     :<br>
+            semi colon ;<br>
+            less-than sign   < <br>
+           equals sign =<br>
+           greater-than sign ><br>
+
+
+        </p>
+    </div>
+
+
+    <div>
+        <h2>Basic THML Table1</h2>
+        <p>
+            the th tag defines a header cell in.
+            an html table has two kinds of cells.
+            Header cells - contains hearder information
+            created with the th element
+            Data cells- contains data created with the td element.
+            the text in th elements are bold and centered by default.
+            the text in td elements are regular and left-aligned by default.
+        </p>
+        <h2>Basic THML Table2</h2>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>mirahmad</td>
+                <td>Hakimi</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Miruddin</td>
+                <td>Ali</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>Rahila</td>
+                <td>Noorahmad</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Said Ahmad</td>
+                <td>said-Ahmad</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <th>Out-come</th>
+                <th>In-come</th>
+                <th>Retirement percent %</th>
+            </tr>
+            <tr>
+                <td>2000 Af</td>
+                <td>2400</td>
+                <td>20%</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Definition of td or TD TAG in html </h2>
+        <p>
+            the td tag defines a standard data cell in an html table.
+        </p>
+        <table>
+            <tr>
+                <td>Cell A</td>
+                <td>Cell B</td>
+            </tr>
+            <tr>
+                <td>Cell C</td>
+                <td>Cell D</td>
+            </tr>
+            <tr>
+                <td>Mirahmad</td>
+                <td>Hakimi</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Month</th>
+                <th>Saving</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$500</td>
+            </tr>
+            <td>February</td>
+            <td>$600</td>
+        </table>
+    </div>
+
+
+  <!---------new table-->
+    <style>
+        table, th, td {
+          border: 3px solid black;
+        }
+        </style>
+    <div>
+        
+    <h1>Colspan and rowspan</h1>
+
+    <h3>Cell that spans two columns:</h3>
+    <table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th colspan="2">Phone</th>    
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>john.doe@example.com</td>    
+    <td>123-45-678</td>
+    <td>212-00-546</td>    
+  </tr>
+</table>
+
+<h3>Cell that spans two rows:</h3>
+<table>
+  <tr>
+    <th>Name:</th>
+    <td>John Doe</td>
+  </tr>
+  <tr>
+    <th>Email:</th>  
+    <td>john.doe@example.com</td>      
+  </tr>  
+  <tr>
+    <th rowspan="2">Phone:</th>
+    <td>123-45-678</td>
+  </tr>
+  <tr>
+    <td>212-00-546</td>
+  </tr>
+</table>
+    </div>
+
+    <div>
+        <h1>Audio TO Html</h1>
+        <audio controls autoplay>
+            <source src="anaam1.ogg" type="audio/mp3"/>
+            <source src="anaam1.ogg" type="audio/ogg"/>
+            <p><a href="anaam1.ogg">Downlod the Mp3 file</a>"</p>
+        </audio>
+    </div>
+
+    <div>
+        <h1>this is the another audio file </h1>
+        <audio controls>
+              <source src="anaam1.ogg" type="audio/mp3">
+              <source src="anaam1.ogg" type="audio/ogg">
+              <p><a href="anaam1.ogg"> Downlod ogg file</a></p>
+        </audio>
+    </div>
+      
+
+
+    <!---------iframe            -->
+    <div>
+        <h1>Mirahmad Iframe page now</h1>
+        <table style="font-weight: 600;color: rebeccapurple;">
+            <tr>
+                <th>Name</th>
+                <th>Fathername</th>
+                <th>Salary</th>
+            </tr>
+            <tr>
+                <td>Mirahmad</td>
+                <td>Noorahmad</td>
+                <td>$2200</td>
+            </tr>
+            <tr>
+                <td>Rahilah</td>
+                <td>Noor-Ahmad</td>
+                <td>Af 15000</td>
+            </tr>
+            
+        </table>
+        <p style="background-color: rebeccapurple;font-size: large;font-family: sans-serif;text-align: left;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Autem, sapiente deserunt veritatis, similique molestias
+            obcaecati impedit ad hic est iste alias placeat? Culpa
+            repellat pariatur ad esse fuga eius placeat.
+        </p>
+    </div>
+    <!---------new page-->
+    <div>
+        <iframe src="iframe.html" style="height:299px; width=633;background-color: gray;"></iframe>
+        <iframe src="iframe2.html" style="height:299px; width=633;background-color: palevioletred;"></iframe>
+    </div>
+
+
+    <!--------web page size and layout-->
+    <div>
+        <h1>WEB PAGE SIZE AND LAYOUT </h1>
+        <a href="https://www.iteracy.com/blog/post/size-and-layout-of-a-web-page">how much is web page size and layout--???</a>
+    </div>
+
+     <style>
+         backround-img:url(moulla.jpg);
+     </style>
+    <div>
+
+    </div>
+
+</body>
+</html>
